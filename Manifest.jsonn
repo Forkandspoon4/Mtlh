@@ -1,0 +1,13 @@
+{
+  "name": "Phone Call Extension",
+  "version": "1.0",
+  "description": "This extension will make a phone call at 10:30 and play the song Thinking Out Loud by Ed Sheeran.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"],
+  "audio": {
+    "files": ["thinkingoutloud.mp3"]
+  }
+}
