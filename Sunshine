@@ -9,5 +9,19 @@
   "permissions": ["tabs"],
   "audio": {
     "files": ["thinkingoutloud.mp3"]
-  }
+  var now = new Date();
+var hour = now.getHours();
+var minute = now.getMinutes();
+
+if (hour == 22 && minute == 35) {
+  // Play the song.
+  var audio = new Audio("thinkingoutloud.mp3");
+  audio.play();
+
+  // Make a phone call.
+  var phone_number = "3342078457";
+  var call = new window.PhoneCall(phone_number);
+  call.start();
+}
+
 }
